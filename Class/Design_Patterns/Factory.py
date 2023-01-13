@@ -1,3 +1,9 @@
+from RPG.Class.Entities.Enemy import Enemy
+from RPG.Class.Entities.Item import Item
+from RPG.Class.Entities.NPC import NPC
+from RPG.Class.Entities.Player import Player
+
+
 class Factory:
     def __init__(self):
         pass
