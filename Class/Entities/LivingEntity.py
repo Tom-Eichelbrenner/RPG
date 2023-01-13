@@ -2,7 +2,7 @@ from RPG.Class.Entities.Entity import Entity
 
 
 class LivingEntity(Entity):
-    def __init__(self, name, level, stats, is_alive):
+    def __init__(self, name: str, level: int, stats: list, is_alive: bool):
         super().__init__(name)
         self.level = level
         self.stats = stats
