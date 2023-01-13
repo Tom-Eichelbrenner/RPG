@@ -4,4 +4,7 @@ class EntityFactory:
 
     @staticmethod
     def create(entity_type, *args, **kwargs):
-        pass
+        if entity_type not in ["Enemy", "Item", "NPC", "Player"]:
+            raise ValueError("Invalid entity type.")
+        factory_class = eval(f"{entity_type}Factory")
+        return factory_class.create(*args, **kwargs)
