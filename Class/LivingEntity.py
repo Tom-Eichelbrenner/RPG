@@ -1,0 +1,27 @@
+from RPG.Class.Entities import Entities
+
+
+class LivingEntity(Entities):
+    def __init__(self, name, level, stats, is_alive):
+        super().__init__(name)
+        self.level = level
+        self.stats = stats
+        self.is_alive = is_alive
+
+    def get_level(self):
+        return self.level
+
+    def get_stats(self):
+        return self.stats
+
+    def get_stat(self, stat):
+        if stat in self.stats:
+            return self.stats[stat]
+        else:
+            return None
+
+    def set_stats(self, stats):
+        self.stats = stats
+
+    def increase_level(self):
+        self.level += 1

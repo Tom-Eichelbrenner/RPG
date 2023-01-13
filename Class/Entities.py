@@ -1,0 +1,9 @@
+class Entities:
+    def __init__(self, name):
+        self.name = name
+
+    def get_type(self):
+        pass
+
+    def get_name(self):
+        return self.name
