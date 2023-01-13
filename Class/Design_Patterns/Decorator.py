@@ -4,6 +4,8 @@ class Decorator:
         self.abilities = []
 
     def add_ability(self, ability):
+        if not hasattr(ability, "use"):
+            raise ValueError("Ability must have a 'use' method")
         self.abilities.append(ability)
 
     def remove_ability(self, ability):
@@ -11,6 +13,10 @@ class Decorator:
 
     def get_abilities(self):
         return self.abilities
+
+    def use_abilities(self):
+        for ability in self.abilities:
+            ability.use()
 
 
 class FireballAbility:
