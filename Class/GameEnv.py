@@ -1,7 +1,8 @@
 from RPG.Class.Design_Patterns.Factories import EntityFactory
-from RPG.Class.Design_Patterns.Observer import ItemObserver, LivingEntityObserver, QuestObserver
+from RPG.Class.Design_Patterns.Observers import ItemObserver, LivingEntityObserver, QuestObserver
 from RPG.Class.Design_Patterns.Singleton import Singleton
 from RPG.Class.Entities import Item, LivingEntity, Quest
+
 
 class GameEnv(metaclass=Singleton):
     def __init__(self):
@@ -21,7 +22,6 @@ class GameEnv(metaclass=Singleton):
         elif isinstance(entity, Quest):
             self.quest_observer.notify(entity)
 
-
     def update_entity(self, entity):
         for i, e in enumerate(self.entities):
             if e.name == entity.name:
@@ -34,8 +34,6 @@ class GameEnv(metaclass=Singleton):
                     self.quest_observer.notify(entity)
                 break
 
-
-
     def delete_entity(self, entity_name):
         for i, e in enumerate(self.entities):
             if e.name == entity_name:
@@ -47,6 +45,7 @@ class GameEnv(metaclass=Singleton):
                 elif isinstance(e, Quest):
                     self.quest_observer.update_quests(e)
                 break
+
     def get_environment(self):
         return {"entities": self.entities, "player": self.player}
 
