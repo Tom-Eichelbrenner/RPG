@@ -1,4 +1,4 @@
-from RPG.Class.Factory import Factory
+import Factory
 
 
 class GameEnv(metaclass=Singleton):
