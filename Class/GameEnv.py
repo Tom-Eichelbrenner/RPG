@@ -1,3 +1,6 @@
+from RPG.Class.Factory import Factory
+
+
 class GameEnv(metaclass=Singleton):
     def __init__(self):
         self.entities = []
