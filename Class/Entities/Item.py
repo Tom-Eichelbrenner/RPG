@@ -1,5 +1,5 @@
 import Entity
-import EntityTypes  # Enum imports are bugged ?
+from EntityTypes import EntityTypes  # Enum imports are bugged ?
 
 
 class Item(Entity):
