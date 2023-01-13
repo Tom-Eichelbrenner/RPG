@@ -12,6 +12,12 @@ class Player(LivingEntity):
     def get_xp(self):
         return self.xp
 
+    def increase_xp(self, xp):
+        self.xp += xp
+
+        if self.xp == 100:
+            self.increase_level()
+
     def get_inventory(self):
         return self.inventory
 
