@@ -1,5 +1,5 @@
-import Factory
-from RPG.Class.Singleton import Singleton
+from RPG.Class.Design_Patterns import Factory
+from RPG.Class.Design_Patterns.Singleton import Singleton
 
 
 class GameEnv(metaclass=Singleton):
