@@ -1,7 +1,7 @@
-from RPG.Class.Entities import Entities
+from RPG.Class.Entities import Entity
 
 
-class LivingEntity(Entities):
+class LivingEntity(Entity):
     def __init__(self, name, level, stats, is_alive):
         super().__init__(name)
         self.level = level
