@@ -8,10 +8,10 @@ class GameEnv(metaclass=Singleton):
     def __init__(self):
         self.entities = []
         self.player = None
-        self.factory = EntityFactory()
-        self.item_observer = ItemObserver()
-        self.living_entity_observer = LivingEntityObserver()
-        self.quest_observer = QuestObserver()
+        self.factory = EntityFactory
+        self.item_observer = ItemObserver
+        self.living_entity_observer = LivingEntityObserver
+        self.quest_observer = QuestObserver
 
     def add_entity(self, entity):
         self.entities.append(entity)
