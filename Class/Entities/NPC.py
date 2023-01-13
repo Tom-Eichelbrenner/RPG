@@ -1,4 +1,4 @@
-from RPG.Class.LivingEntity import LivingEntity
+from RPG.Class.Entities.LivingEntity import LivingEntity
 
 
 class NPC(LivingEntity):
