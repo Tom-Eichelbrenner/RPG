@@ -1,4 +1,4 @@
-from Class.Entities import Item
+import Item
 
 
 class StackableItem(Item):
