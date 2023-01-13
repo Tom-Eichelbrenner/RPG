@@ -1,4 +1,4 @@
-from Class.Entities import LivingEntity
+import LivingEntity
 
 
 class Player(LivingEntity):

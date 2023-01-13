@@ -1,4 +1,4 @@
-from Class.Entities.NPC import NPC
+import NPC
 
 
 class Enemy(NPC):
