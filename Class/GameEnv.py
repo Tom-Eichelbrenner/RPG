@@ -1,4 +1,5 @@
 from RPG.Class.Design_Patterns import Factory
+from RPG.Class.Design_Patterns.Observer import Observer
 from RPG.Class.Design_Patterns.Singleton import Singleton
 
 
