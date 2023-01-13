@@ -17,3 +17,7 @@ class Player(LivingEntity):
 
     def remove_item(self, item):
         self.inventory.remove(item)
+
+    def on_notify(self, event):
+        if event == "quest_completed":
+            print(f"Player {self.name} has completed a quest.")
