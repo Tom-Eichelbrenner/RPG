@@ -12,6 +12,7 @@ class Decorator:
     def get_abilities(self):
         return self.abilities
 
+
 class FireballAbility:
     def __init__(self, entity):
         self.entity= entity

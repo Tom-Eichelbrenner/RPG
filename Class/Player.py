@@ -1,5 +1,6 @@
 import LivingEntity
 
+
 class Player(LivingEntity):
     def __init__(self, name, level, hp):
         self.xp = 0

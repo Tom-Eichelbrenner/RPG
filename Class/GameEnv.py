@@ -1,12 +1,13 @@
 import Factory
+from RPG.Class.Singleton import Singleton
 
 
 class GameEnv(metaclass=Singleton):
     def __init__(self):
         self.entities = []
         self.player = None
-        self.factory = Factory()
-        self.observer = Observer()
+        self.factory = Factory
+        self.observer = Observer
 
     def add_entity(self, entity):
         self.entities.append(entity)
