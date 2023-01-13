@@ -1,4 +1,4 @@
-from RPG.Class.Entities import LivingEntity
+from Class.Entities import LivingEntity
 
 
 class Player(LivingEntity):

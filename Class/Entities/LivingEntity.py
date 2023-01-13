@@ -1,9 +1,10 @@
-from RPG.Class.Entities.Entity import Entity
+import Entity
+from EntityTypes import EntityTypes  # Enum imports are bugged ?
 
 
 class LivingEntity(Entity):
     def __init__(self, name: str, level: int, stats: list, is_alive: bool):
-        super().__init__(name)
+        super().__init__(name, EntityTypes.LIVING_ENTITY)
         self.level = level
         self.stats = stats
         self.is_alive = is_alive

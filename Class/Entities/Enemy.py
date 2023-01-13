@@ -1,4 +1,4 @@
-from RPG.Class.Entities.NPC import NPC
+from Class.Entities.NPC import NPC
 
 
 class Enemy(NPC):
