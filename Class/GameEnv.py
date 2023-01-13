@@ -32,7 +32,7 @@ class GameEnv(metaclass=Singleton):
         return {"entities": self.entities, "player": self.player}
 
     def run(self):
-        self.player = self.factory.create("Player", "Frank", 1, 100)
+        self.player = self.factory.create("Player", "Ash")
         while self.player.is_alive():
             # update environment and handle player actions
             pass
