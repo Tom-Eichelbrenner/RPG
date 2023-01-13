@@ -1,4 +1,4 @@
-from RPG.Class.Design_Patterns import Factory
+from RPG.Class.Design_Patterns.Factories import EntityFactory
 from RPG.Class.Design_Patterns.Observer import Observer
 from RPG.Class.Design_Patterns.Singleton import Singleton
 
@@ -7,7 +7,7 @@ class GameEnv(metaclass=Singleton):
     def __init__(self):
         self.entities = []
         self.player = None
-        self.factory = Factory
+        self.factory = EntityFactory
         self.observer = Observer
 
     def add_entity(self, entity):

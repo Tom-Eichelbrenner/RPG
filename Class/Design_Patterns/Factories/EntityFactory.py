@@ -4,7 +4,7 @@ from RPG.Class.Entities.NPC import NPC
 from RPG.Class.Entities.Player import Player
 
 
-class Factory:
+class EntityFactory:
     def __init__(self):
         pass
 
